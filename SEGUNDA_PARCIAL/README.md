@@ -1,25 +1,18 @@
-# UNIDAD 1: PRIMERA PARCIAL "PROGRAMACIÓN FUNCIONAL". 
+# UNIDAD 2: SEGUNDA PARCIAL "PROGRAMACIÓN FUNCIONAL". 
 ## WALTER ALEXANDER
 ### ESTUDIANTE: GUDIÑO MÉNDEZ GABRIEL ALEJANDRO
-#### 1. FUNCIONES EN PYTHON
-Desde los primeros días de clase vimos detalladamente las funciones en <b>Python</b> y cada una de sus características, formas de implementación, argumentos, etc. Aprendimos como hacer darles el uso adecuado a las funciones en este lenguaje de programación. En las primeras sesiones programando escribimos varias líneas de código, en donde aplicamos el uso de funciones. Realizamos unos pequeños ejercicios que consistía en lo siguiente:
+#### 1. PRINCIPIOS DE PROGRAMACIÓN CON <b>DART</b
+En el comienzo de esta segunda parcial el maestro Walter nos dió a conocer un nuevo lenguaje de programación con un paradigma orientado a objetos, en donde se nos enseñó la sintaxis correcta utilizado en este lenguaje. Desde las más básicas hasta las más avanzadas, los temas o procesos desarrollados que aprendimos fueron las siguientes:
 
-  - "Escribir una funcion que reciba un mensaje y un nombre  escriba en pantalla "<mensaje> <nombre>".
-  - "Escribir una funcion que reciba el nombre y la edad de una persona. El mensaje de salida tiene que ser:   "Hola <nombre> tienes <edad> años".
-  - "Escribir una funcion que reciba el año actual y el año de nacimiento, usando la funcion anterior enviando esta como argumento obtenga el mensaje: "Hola <nombre> tienes <edad> años".
+  - Tipos de datos (String, int, double, dynamic, etc.).
+  - Declaración de variables de manera explícita.
+  - Estructura correcta de la función main o principal.
+  - Interpolación de cadenas. Inyectar una variable a una cadena e interpolación de cadenas con expresiones o funciones.
   
-   En la cuál los códigos fuentes de la funciones anteriores fueron las siguientes:
-El cual este fue el resultado de programar las funciones de esos ejercicios de la siguiente forma:
+  Algunos fragmentos de códigos de los temas anteriores son los siguientes:
 ~~~
 def FuncionMensaje(Mensaje: str, Nombre: str) -> str:
-    return f"{Mensaje} {Nombre}"
-    
-def FuncionEdadUno(Nombre: str, Edad: int) -> str:
-    return f"Hola {Nombre} tienes {Edad} años"
-    
-def FuncionEdadDos(AnioActual:int, AnioNacimiento:int, Nombre:str) -> str:
-    Edad = AnioActual - AnioNacimiento
-    return f"¡Hola {Nombre} tienes {Edad} años!"
+    Codigo aqui
 ~~~
 Desde la función principal lo que hicimos fue llamar cada función que se definieron anteriormente. El bloque de código del cuerpo o función principal es la siguiente:
 ~~~
