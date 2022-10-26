@@ -1,7 +1,7 @@
 # UNIDAD 2: SEGUNDA PARCIAL "PROGRAMACIÓN FUNCIONAL". 
-## WALTER ALEXANDER
-### ESTUDIANTE: GUDIÑO MÉNDEZ GABRIEL ALEJANDRO
-#### 1. PRINCIPIOS DE PROGRAMACIÓN CON <b>DART</b
+## WALTER ALEXANDER.
+### ESTUDIANTE: GUDIÑO MÉNDEZ GABRIEL ALEJANDRO.
+#### 1. PRINCIPIOS DE PROGRAMACIÓN CON DART.
 En el comienzo de esta segunda parcial el maestro Walter nos dió a conocer un nuevo lenguaje de programación con un paradigma orientado a objetos, en donde se nos enseñó la sintaxis correcta utilizado en este lenguaje. Desde las más básicas hasta las más avanzadas, los temas o procesos desarrollados que aprendimos fueron las siguientes:
 
   - Tipos de datos (String, int, double, dynamic, etc.).
@@ -11,16 +11,21 @@ En el comienzo de esta segunda parcial el maestro Walter nos dió a conocer un n
   
   Algunos fragmentos de códigos de los temas anteriores son los siguientes:
 ~~~
-def FuncionMensaje(Mensaje: str, Nombre: str) -> str:
-    Codigo aqui
+void main()
+{
+    print("Primer programa hecho en DART.");
+}
 ~~~
-Desde la función principal lo que hicimos fue llamar cada función que se definieron anteriormente. El bloque de código del cuerpo o función principal es la siguiente:
-~~~
-if __name__ == "__main__":
 
-    print(FuncionMensaje("Hola", "Gabo"))
-    print(FuncionEdadUno("Gabo", 19))
-    print(FuncionEdadDos(2022, 2003, "Gabo"))
+~~~
+void main()
+{
+    String Nombre = "Gabo";
+    String Apellido;
+    print("Nombre");
+    Apellido = "Gudiño";
+    print(Nombre + " " + Apellido);
+}
 ~~~
 La pantalla de respuesta al ejercicio anterior es la siguiente:<br><br>
 ![](https://i.imgur.com/KYAuiEC.png)
