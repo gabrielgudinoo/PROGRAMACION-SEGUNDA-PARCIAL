@@ -4,7 +4,7 @@
 #### 1. PRINCIPIOS DE PROGRAMACIÓN CON DART.
 En el comienzo de esta segunda parcial el maestro Walter nos dió a conocer un nuevo lenguaje de programación con un paradigma orientado a objetos, en donde se nos enseñó la sintaxis correcta utilizado en este lenguaje. Desde las más básicas hasta las más avanzadas, los temas o procesos desarrollados que aprendimos fueron las siguientes:
 
-  - Tipos de datos (String, int, double, dynamic, etc.).
+  - Tipos de datos (String, int, double, dynamic, boolean, num).
   - Declaración de variables de manera explícita.
   - Estructura correcta de la función main o principal.
   - Interpolación de cadenas. Inyectar una variable a una cadena e interpolación de cadenas con expresiones o funciones.
@@ -110,25 +110,7 @@ Por lo tanto, si colocamos un <b>int.parse</b> al momento de hacer la asignació
 ![](https://i.imgur.com/kzMGafF.png)
 
   
-### 4. ESTRUCTURAS DE DATOS EN PYTHON 3
-En esta sub unidad aprendimos como llevar a cabo la programación de:
-  - Listas
-  - Tuplas
-  - Diccionarios
-En donde se abarcaron las definiciones y las sintaxis correctas de cada una de ellas. Empezando con las <b>listas</b>, estas son estructuras de datos que pueden almacenar cualquier otro tipo de dato, inclusive una lista puede contener otra lista, además, la cantidad de elementos de una lista se puede modificar removiendo o añadiendo elementos. Para definir una lista se utilizan los corchetes, dentro de estos se colocan todos los elementos separados por comas:
-~~~
-Estudiantes = ["Gabo", "Paco", "Luis", "Lupita"]
-~~~
-  Las <b>tuplas</b> son secuencias de elementos similares a las listas, la diferencia principal es que las tuplas no pueden ser modificadas directamente, es decir, una tupla no dispone de los métodos como append o insert que modifican los elementos de una lista. Para definir una tupla, los elementos se separan con comas y se encierran entre paréntesis como en el siguiente ejemplo:
-~~~
-Alumnos = ("Alejandro", "Kevin", "Luis", "Marco")
-~~~
-  Por último, los <b>diccionarios</b> son estructuras que contienen una colección de elementos de la forma clave: valor separados por comas y encerrados entre llaves. Las claves deben ser objetos inmutables y los valores pueden ser de cualquier tipo. Necesariamente las claves deben ser únicas en cada diccionario, no así los valores.
-Vamos a definir un diccionario con el nombre y calificaciones de unos estudiantes:
-~~~
-AlumnosCalificaciones = {"Nombre": "Hugo", "Materia1": 10, "Materia2": 5}
-print(f"Diccionario \"Alumnos\": {AlumnosCalificaciones}")
-print(f"Alumno: {AlumnosCalificaciones['Nombre']}")
-print(f"Alumno: {AlumnosCalificaciones['Nombre']}", f"con una calificación de: {AlumnosCalificaciones['Materia1']}")
-~~~
+### 4. ESTRUCTURAS DE DATOS EN DART
+En esta sección aprendimos acerca de como utilizar las listas en Dart,  en donde se abarcaron las definiciones y las sintaxis correctas de estas estructuras. Comenzando en que estas son estructuras de datos que pueden contener un grupo de objetos de distinto tipo de dato, inclusive una lista puede contener otra lista, además, la cantidad de elementos de una lista se puede modificar removiendo o añadiendo elementos. Para definir una lista se utilizan los corchetes, dentro de estos se colocan todos los elementos separados por comas:
+
   Brevemente, esos fueron los temas vistos en la <b<Unidad I</b> de esta primera parcial de nuestra clase <b>Programación funcional</b> llevada acabo por el docente <b>Walter Alexander Mata Lopez</b> en nuestra carrera profesional de Ingenería en computación inteligente, por el presente alumno <b>Gabriel Alejandro Gudiño Méndez</b> del grupo 2do "D".
