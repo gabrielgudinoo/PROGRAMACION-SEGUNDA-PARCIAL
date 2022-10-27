@@ -111,6 +111,15 @@ Por lo tanto, si colocamos un <b>int.parse</b> al momento de hacer la asignació
 
   
 ### 4. ESTRUCTURAS DE DATOS EN DART
-En esta sección aprendimos acerca de como utilizar las listas en Dart,  en donde se abarcaron las definiciones y las sintaxis correctas de estas estructuras. Comenzando en que estas son estructuras de datos que pueden contener un grupo de objetos de distinto tipo de dato, inclusive una lista puede contener otra lista, además, la cantidad de elementos de una lista se puede modificar removiendo o añadiendo elementos. Para definir una lista se utilizan los corchetes, dentro de estos se colocan todos los elementos separados por comas:
 
-  Brevemente, esos fueron los temas vistos en la <b<Unidad I</b> de esta primera parcial de nuestra clase <b>Programación funcional</b> llevada acabo por el docente <b>Walter Alexander Mata Lopez</b> en nuestra carrera profesional de Ingenería en computación inteligente, por el presente alumno <b>Gabriel Alejandro Gudiño Méndez</b> del grupo 2do "D".
+En esta sección aprendimos acerca de como utilizar las listas en Dart,  en donde se abarcaron las definiciones y las sintaxis correctas de estas estructuras. Comenzando en que estas son estructuras de datos que pueden contener un grupo de objetos de distinto tipo de dato, la cantidad de elementos de una lista se puede modificar removiendo o añadiendo elementos. Para definir una lista se utilizan los corchetes, dentro de estos se colocan todos los elementos separados por comas:
+~~~
+var miLista = [11, "Gabo", 9.9, false];
+~~~
+
+### 4. OBJETOS EN DART
+
+
+
+
+Brevemente, esos fueron los temas vistos en la <b<Unidad I</b> de esta primera parcial de nuestra clase <b>Programación funcional</b> llevada acabo por el docente <b>Walter Alexander Mata Lopez</b> en nuestra carrera profesional de Ingenería en computación inteligente, por el presente alumno <b>Gabriel Alejandro Gudiño Méndez</b> del grupo 2do "D".
