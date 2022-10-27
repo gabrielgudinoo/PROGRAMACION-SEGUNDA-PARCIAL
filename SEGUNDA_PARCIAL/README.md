@@ -182,10 +182,63 @@ La pantalla de ejecución es la siguiente:
 
 ### CONSTRUCTORES EN DART
 
-Los constructores son un método especial que se utiliza para inicializar un objeto cuando se crea en el programa. En la programación orientada a objetos, cuando se crea un objeto, llama automáticamente al constructor. Todas las clases tienen su constructor predeterminado que es creado por el compilador cuando se llama a la clase, además, también se puede definir un constructor propio. Pero debe tener en cuenta que si lo hace, el constructor predeterminado no se creará y se ignorará. La forma 
+Los constructores son un método especial que se utiliza para inicializar un objeto cuando se crea en el programa. En la programación orientada a objetos, cuando se crea un objeto, llama automáticamente al constructor. Todas las clases tienen su constructor predeterminado que es creado por el compilador cuando se llama a la clase, además, también se puede definir un constructor propio. Pero debe tener en cuenta que si lo hace, el constructor predeterminado no se creará y se ignorará. Otra actividad realizada en clase fue hacer un programa muy identico al anterior pero con la implementación de un constructor, veamos el código:
+~~~
+import 'dart:io';
+void main()
+{
+  Casa Valle = new Casa(4, 530, "Valle de Bravo");
+  Informacion(Valle);
+  Casa Altozano = new Casa(5, 600, "Altozano");
+  Informacion(Altozano);
+  Casa LasParotas = new Casa.MetrosCuadrados(650);
+  Informacion(LasParotas);
 
 
+  stdout.write("\nPedir datos:\n\nDígite el precio: ");
+  var PedirPrecio = (stdin.readLineSync()!);
+  double __Precio = double.parse(PedirPrecio);
 
+  stdout.write("Dígite los metros cuadrados: ");
+  var  PedirMetrosCuadrados = (stdin.readLineSync()!);
+  double __MetrosCuadrados = double.parse(PedirMetrosCuadrados);
 
+  stdout.write("Dígite la ubicación: ");
+  var  __Ubicacion = stdin.readLineSync();
 
-Brevemente, esos fueron los temas vistos en la <b<Unidad I</b> de esta primera parcial de nuestra clase <b>Programación funcional</b> llevada acabo por el docente <b>Walter Alexander Mata Lopez</b> en nuestra carrera profesional de Ingenería en computación inteligente, por el presente alumno <b>Gabriel Alejandro Gudiño Méndez</b> del grupo 2do "D".
+  Casa Infonavit = new Casa(__Precio, __MetrosCuadrados, __Ubicacion);
+  Informacion(Infonavit);
+
+}
+class Casa
+{
+    double? _Precio;
+    double? _MetrosCuadrados;
+    String? _Ubicacion;
+
+    void set Precio(double Precio) => _Precio = Precio;
+    void set MetrosCuadrados(double MetrosCuadrados) => _MetrosCuadrados = MetrosCuadrados;
+    void set Ubicacion(String Ubicacion) => _Ubicacion = Ubicacion;
+
+    double get Precio => _Precio!;
+    double get MetrosCuadrados => _MetrosCuadrados!;
+    String get Ubicacion => _Ubicacion!;
+
+    Casa(this._Precio, this._MetrosCuadrados, this._Ubicacion);
+
+    Casa.MetrosCuadrados(this._MetrosCuadrados);
+}
+
+void Informacion(Casa)
+{
+  print("\n             INFORMACIÓN\nPrecio de la casa:             ${Casa._Precio}");
+  print("Metros cuadrados construidos:  ${Casa._MetrosCuadrados}");
+  print("Ubicación:                     ${Casa._Ubicacion}");
+}
+~~~
+
+En este código nuestro objeto es una Casa, cuyas propiedades son <b>precio</b>, <b>metros cuadrados de construcción</b> y su <b>ubicación</b>. En este ejemplo, no le declaramos métodos para no hacer más largo el código, pero la idea y el proceso es el mismo. Veamos la pantalla de ejecución de este código usando constructores:
+
+![](https://i.imgur.com/2daydMG.png)
+
+Esos fueron los temas abordados en Dart en la <b<Unidad II</b> de nuestra clase de <b>Programación funcional</b> que ahora fue más Orientada a Objetos, nuestra materia es impartida por el docente <b>Walter Alexander Mata Lopez</b> y actualmente estamos cursando nuestra carrera profesional de Ingenería en Computación Inteligente <b>ICI</b>, por el presente alumno <b>Gabriel Alejandro Gudiño Méndez</b> del grupo 2do "D".
