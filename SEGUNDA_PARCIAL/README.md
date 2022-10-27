@@ -50,7 +50,7 @@ Ejecución a los bloques de códigos anteriores:<br><br>
 
 ![](https://i.imgur.com/ofqvjED.png)
   
-### 2. FUNCIONES EN DART
+ ### 2. FUNCIONES EN DART
 Posterior a lo visto anteriormente, continuamos con las estructuración de funciones en este lenguaje de programación, en la cual no tiene mucha diferencia a otros lenguajes en cuestión de sintaxis, se puede decir que es completamente idéntica a los que hemos utilizado en Python e incluso en C, pero con una pequeña cantidad de procesos adicionales que podemos realizar en Dart. Una de esas son los "Arrow functions" o funciones cortas, en la cual son funciones que solo pueden tener una línea de código realizados con la sigiente flecha:
 ~~~
 =>
@@ -82,17 +82,31 @@ Arrow functions ó funciones cortas:
 int calcularEdadshortFunctions(int aAcual, int aNacimiento) => aAcual - aNacimiento;
 ~~~
 
- ### 3. LEER DATOS DESDE EL TECLADO
+### 3. LEER DATOS DESDE EL TECLADO
 En esta sección se abordó como leer datos desde el teclado en la cual es demasiado útil a la hora de programar. Para llevarlo a cabo se necesita el uso de una librería de Dart llamada "dart:io". Para llamar dicha función a nuestro código la siguiente sintaxis es la correcta:
 ~~~
 import 'dart:io';
 ~~~
-Para llevar a cabo todo este proceso, se necesitará realizar el siguiente método:
+Para llevar a cabo todo este proceso, se necesitará realizar el siguiente método si lo que vamos a leer es de tipo string:
 ~~~
 var nombreVariable = stdin.readLineSync();
 ~~~
+En caso de que queramos leer un dato de tipo entero o algún otro, se usará:
+~~~
+var nombreVariable = int.parse(stdin.readLineSync()!);
+~~~
+Si no realizamos ambas diferencias, los resultados pueden ser catastróficos. Te voy a demostrar un ejemplo, el código siguiente:
+~~~
+print("Dame tu edad:");
+var edad = int.parse(stdin.readLineSync()!);
+print("$edad es de tipo ${edad.runtimeType}");
+~~~
+Va a imprimir lo siguiente:
+![](https://i.imgur.com/gAXlz19.png)
+
+
   
-#### 4. ESTRUCTURAS DE DATOS EN PYTHON 3
+### 4. ESTRUCTURAS DE DATOS EN PYTHON 3
 En esta sub unidad aprendimos como llevar a cabo la programación de:
   - Listas
   - Tuplas
