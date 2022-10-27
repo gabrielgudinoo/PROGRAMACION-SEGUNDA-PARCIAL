@@ -124,8 +124,68 @@ En Dart todo es un objeto, por lo que la declaración de variables como enteros,
 - Color del vehículo.
 - Modelo del vehículo.
 - Marca del vehículo.
-Los métodos del objeto serán:
+
+Los métodos del objeto serán los siguientes:
+
 - Arrancar.
 - Correr.
 - Frenar.
+
+Dicho lo anterior, la programación del código será la siguiente:
+~~~
+void main(List<String> args)
+{
+
+    Vehiculo classG = new Vehiculo();
+    classG.noLlantas = 6;
+    classG.color = "Azul";
+    classG.modelo = "CLASS G 2020";
+    classG.marca = "Merdeces Benz";
+    classG.informacion();
+}
+
+class Vehiculo
+{
+    int? _noLlantas;
+    String? _color;
+    String? _modelo;
+    String? _marca;
+    
+    void set noLlantas(int noLlantas) => _noLlantas = noLlantas;
+    void set color(String color) => _color = color;
+    void set modelo(String modelo) => _modelo = modelo;
+    void set marca(String marca) => _marca = marca;
+
+    int get noLlantas => _noLlantas!;
+    String get color => _color!;
+    String get modelo => _modelo!;
+    String get marca => _marca!;
+    void arrancar() => print("El auto comenzó avanzar.");
+    void correr() => print("El auto corre.");
+    void frenar() => print("El auto comenzó el afrenado.");
+
+    
+    void informacion()
+    {
+        print("No. de Llantas    :   ${_noLlantas}");
+        print("Color             :   ${_color}");
+        print("Modelo            :   ${_modelo}");
+        print("Marca             :   ${_marca}");
+    }    
+
+}
+~~~
+
+La pantalla de ejecución es la siguiente:
+
+![](https://i.imgur.com/WlAN409.png)
+
+### CONSTRUCTORES EN DART
+
+Los constructores son un método especial que se utiliza para inicializar un objeto cuando se crea en el programa. En la programación orientada a objetos, cuando se crea un objeto, llama automáticamente al constructor. Todas las clases tienen su constructor predeterminado que es creado por el compilador cuando se llama a la clase, además, también se puede definir un constructor propio. Pero debe tener en cuenta que si lo hace, el constructor predeterminado no se creará y se ignorará. La forma 
+
+
+
+
+
 Brevemente, esos fueron los temas vistos en la <b<Unidad I</b> de esta primera parcial de nuestra clase <b>Programación funcional</b> llevada acabo por el docente <b>Walter Alexander Mata Lopez</b> en nuestra carrera profesional de Ingenería en computación inteligente, por el presente alumno <b>Gabriel Alejandro Gudiño Méndez</b> del grupo 2do "D".
