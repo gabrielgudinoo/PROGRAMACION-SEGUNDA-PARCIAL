@@ -51,7 +51,7 @@ Ejecución a los bloques de códigos anteriores:<br><br>
 ![](https://i.imgur.com/ofqvjED.png)
   
 ### 2. FUNCIONES EN DART
-En esta sección lo que realizamos fue 
+Posterior a lo visto anteriormente, continuamos con las estructuración de funciones en este lenguaje de programación, en la cual no tiene mucha diferencia a otros lenguajes en cuestión de sintaxis, se puede decir que es completamente idéntica a los que hemos utilizado en Python e incluso en C, pero con una pequeña cantidad de procesos adicionales que podemos realizar en Dart. Una de esas son los "Arrow functions" o funciones cortas, en la cual son funciones que solo pueden tener una línea de código realizados con la sigiente flecha ~~~=>~~~
 
 voy a explicar que fue lo que aprendimos en este tema de importaciones de módulo. Básicamente aprendimos como utilizar importando un archivo externo en nuestro archivo main de nuestro proyecto. Existe un módulo en Python para obtener acceso al código en otro módulo haciendo uso del proceso de importación. La instrucción <b>import</b> es la forma más común de invocar este proceso de importación. A continuación se observan los códigos realizados en clase:
 ~~~
