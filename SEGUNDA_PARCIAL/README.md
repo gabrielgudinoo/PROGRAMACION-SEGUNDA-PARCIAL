@@ -102,8 +102,12 @@ var edad = int.parse(stdin.readLineSync()!);
 print("$edad es de tipo ${edad.runtimeType}");
 ~~~
 Va a imprimir lo siguiente:
+
 ![](https://i.imgur.com/gAXlz19.png)
 
+Por lo tanto, si colocamos un <b>int.parse</b> al momento de hacer la asignación del método a nuestra variable, el resultado será el siguiente:
+
+![](https://i.imgur.com/kzMGafF.png)
 
   
 ### 4. ESTRUCTURAS DE DATOS EN PYTHON 3
