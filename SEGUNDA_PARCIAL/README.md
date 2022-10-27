@@ -241,4 +241,4 @@ En este código nuestro objeto es una Casa, cuyas propiedades son <b>precio</b>,
 
 ![](https://i.imgur.com/2daydMG.png)
 
-Esos fueron los temas abordados en Dart en la <b<Unidad II</b> de nuestra clase de <b>Programación funcional</b> que ahora fue más Orientada a Objetos, nuestra materia es impartida por el docente <b>Walter Alexander Mata Lopez</b> y actualmente estamos cursando nuestra carrera profesional de Ingenería en Computación Inteligente <b>ICI</b>, por el presente alumno <b>Gabriel Alejandro Gudiño Méndez</b> del grupo 2do "D".
+Esos fueron los temas abordados en Dart en la <b>Unidad II</b> de nuestra clase de <b>Programación funcional</b> que ahora fue más Orientada a Objetos, nuestra materia es impartida por el docente <b>Walter Alexander Mata Lopez</b> y actualmente estamos cursando nuestra carrera profesional de Ingenería en Computación Inteligente <b>ICI</b>, por el presente alumno <b>Gabriel Alejandro Gudiño Méndez</b> del grupo 2do "D".
