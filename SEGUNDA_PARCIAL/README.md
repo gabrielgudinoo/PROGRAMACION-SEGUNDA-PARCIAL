@@ -119,7 +119,13 @@ var miLista = [11, "Gabo", 9.9, false];
 
 ### 4. OBJETOS EN DART
 
-
-
-
+En Dart todo es un objeto, por lo que la declaración de variables como enteros, de punto flotante, booleanos y cadenas de texto, son una instancia de objetos de determinado tipo, tan es así que null, también es un objeto. Otra característica importante es que se permite la inferencia de tipos utilizando la palabra reservada var. A continuación se podrá observar como va estructurado un objeto con sus respectivas propiedades y métodos. Se pretende crear un objeto llamado vehículo con las siguientes propiedades:
+- Número de llantas.
+- Color del vehículo.
+- Modelo del vehículo.
+- Marca del vehículo.
+Los métodos del objeto serán:
+- Arrancar.
+- Correr.
+- Frenar.
 Brevemente, esos fueron los temas vistos en la <b<Unidad I</b> de esta primera parcial de nuestra clase <b>Programación funcional</b> llevada acabo por el docente <b>Walter Alexander Mata Lopez</b> en nuestra carrera profesional de Ingenería en computación inteligente, por el presente alumno <b>Gabriel Alejandro Gudiño Méndez</b> del grupo 2do "D".
