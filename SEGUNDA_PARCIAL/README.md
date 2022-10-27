@@ -20,18 +20,40 @@ void main()
 ~~~
 void main()
 {
-    String Nombre = "Gabo";
-    String Apellido;
-    print("Nombre");
-    Apellido = "Gudiño";
-    print(Nombre + " " + Apellido);
+    String aombre = "Gabo";
+    String apellido;
+    print("nombre");
+    apellido = "Gudiño";
+    print(nombre + " " + apellido);
 }
 ~~~
-La pantalla de respuesta al ejercicio anterior es la siguiente:<br><br>
-![](https://i.imgur.com/KYAuiEC.png)
+
+~~~
+void main()
+{
+    int edad = 19;
+    double gravedad = 9.81;
+    num numero = 11;
+    num numeroDos = 11.5;
+    dynamic variableDinamica = "Cadena";
+    print("Cadena: $variableDinamica");
+    variableDinamica = 10;
+    print("Entero: $variableDinamica");
+    variableDinamica = 9.5;
+    print("Flotante: $variableDinamica");
+    variableDinamica = true;
+    print("Booleano: $variableDinamica");
+}
+~~~
+Ejecución a los bloques de códigos anteriores:<br><br>
+![](https://i.imgur.com/tPPBRqv.png)
+
+![](https://i.imgur.com/ofqvjED.png)
   
-### 2. IMPORTACIONES DE ARCHIVOS EN PYTHON
-En esta sección voy a explicar que fue lo que aprendimos en este tema de importaciones de módulo. Básicamente aprendimos como utilizar importando un archivo externo en nuestro archivo main de nuestro proyecto. Existe un módulo en Python para obtener acceso al código en otro módulo haciendo uso del proceso de importación. La instrucción <b>import</b> es la forma más común de invocar este proceso de importación. A continuación se observan los códigos realizados en clase:
+### 2. FUNCIONES EN DART
+En esta sección lo que realizamos fue 
+
+voy a explicar que fue lo que aprendimos en este tema de importaciones de módulo. Básicamente aprendimos como utilizar importando un archivo externo en nuestro archivo main de nuestro proyecto. Existe un módulo en Python para obtener acceso al código en otro módulo haciendo uso del proceso de importación. La instrucción <b>import</b> es la forma más común de invocar este proceso de importación. A continuación se observan los códigos realizados en clase:
 ~~~
 import SUMA as S
 import RESTAR as R
