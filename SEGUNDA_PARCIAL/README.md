@@ -246,31 +246,6 @@ En este código nuestro objeto es una Casa, cuyas propiedades son <b>precio</b>,
 En forma de descripción, se va a nacesitar crear cuatro clases usando y aplicando o heredando los métodos y propiedades mediante la estructuración de herencias en Dart. El código es el siguiente:
 
 ~~~
-void main()
-{   
-    print("\n\"-\" Propiedades  \"@\" Métodos\n");
-    Animal koala = new Animal.data("Koala", "Río Janeiro", "Gris", 2);
-    koala.showAnimal();
-    koala.dormir();
-    print("");
-
-    Tiburon bruce = new Tiburon.data("Bruce", "Océano Índico", "Gris y Blanco", 0, "Tiburón Blanco", 11);
-    //Tiburon pitbull = new Tiburon.data("Bruce", "Océano Índico", "Gris y Blanco", "Tiburón Blanco", 11);
-    bruce.showbruce();
-    bruce.cazando();
-    print("");
-
-    Tigre tigrezo = new Tigre.data("Bengala", "África Safari", "Blanco", 2, 8);
-    tigrezo.showtigrezo();
-    tigrezo.grune();
-    print("");
-
-    Tiburoncin nemo = new Tiburoncin.data("Pez payaso.", "Golfo de México", "Naranja, blanco y negro.", 0, 3, "Si");
-    nemo.showNemo();
-    nemo.huyendo();
-    print("");
-}
-
 class Animal
 {
     String _especie = "";
@@ -342,6 +317,34 @@ class Tiburoncin extends Tigre
         super.showtigrezo();
         print("- Perdido: $_perdido");
     }
+}
+~~~
+
+#### LA IMPLEMENTACIÓN ES LA SIGUIENTE:
+~~~
+void main()
+{   
+    print("\n\"-\" Propiedades  \"@\" Métodos\n");
+    Animal koala = new Animal.data("Koala", "Río Janeiro", "Gris", 2);
+    koala.showAnimal();
+    koala.dormir();
+    print("");
+
+    Tiburon bruce = new Tiburon.data("Bruce", "Océano Índico", "Gris y Blanco", 0, "Tiburón Blanco", 11);
+    //Tiburon pitbull = new Tiburon.data("Bruce", "Océano Índico", "Gris y Blanco", "Tiburón Blanco", 11);
+    bruce.showbruce();
+    bruce.cazando();
+    print("");
+
+    Tigre tigrezo = new Tigre.data("Bengala", "África Safari", "Blanco", 2, 8);
+    tigrezo.showtigrezo();
+    tigrezo.grune();
+    print("");
+
+    Tiburoncin nemo = new Tiburoncin.data("Pez payaso.", "Golfo de México", "Naranja, blanco y negro.", 0, 3, "Si");
+    nemo.showNemo();
+    nemo.huyendo();
+    print("");
 }
 ~~~
 
