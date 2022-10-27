@@ -51,46 +51,45 @@ Ejecución a los bloques de códigos anteriores:<br><br>
 ![](https://i.imgur.com/ofqvjED.png)
   
 ### 2. FUNCIONES EN DART
-Posterior a lo visto anteriormente, continuamos con las estructuración de funciones en este lenguaje de programación, en la cual no tiene mucha diferencia a otros lenguajes en cuestión de sintaxis, se puede decir que es completamente idéntica a los que hemos utilizado en Python e incluso en C, pero con una pequeña cantidad de procesos adicionales que podemos realizar en Dart. Una de esas son los "Arrow functions" o funciones cortas, en la cual son funciones que solo pueden tener una línea de código realizados con la sigiente flecha ~~~=>~~~
-
-voy a explicar que fue lo que aprendimos en este tema de importaciones de módulo. Básicamente aprendimos como utilizar importando un archivo externo en nuestro archivo main de nuestro proyecto. Existe un módulo en Python para obtener acceso al código en otro módulo haciendo uso del proceso de importación. La instrucción <b>import</b> es la forma más común de invocar este proceso de importación. A continuación se observan los códigos realizados en clase:
+Posterior a lo visto anteriormente, continuamos con las estructuración de funciones en este lenguaje de programación, en la cual no tiene mucha diferencia a otros lenguajes en cuestión de sintaxis, se puede decir que es completamente idéntica a los que hemos utilizado en Python e incluso en C, pero con una pequeña cantidad de procesos adicionales que podemos realizar en Dart. Una de esas son los "Arrow functions" o funciones cortas, en la cual son funciones que solo pueden tener una línea de código realizados con la sigiente flecha:
 ~~~
-import SUMA as S
-import RESTAR as R
-import MULTIPLICAR as M
-import DIVIDIR as D
-import CUADRADO as C
+=>
+~~~
+Este tipo de funciones nos ayuda a mantener nuestras funciones pequeñas e incrementar la legibilidad del código. Vamos a convertir nuestros ejemplos anteriores a arrow functions. A continuación se observan un fragmento de los códigos realizados en clase:
+~~~
+void main()
+{
+    print("Hola ${obtenerNombre()} ${obtenerApellido()} tienes ${calcularEdad(2022,2003)} años\n");
+}
 
-if __name__ == "__main__":
+int calcularEdad(int aAcual, int aNacimiento)
+{
+    return aAcual - aNacimiento;
+}
 
-    NumeroUno = 15
-    NumeroDos = 10
-    print("SUMA:",S.sumar(NumeroUno,NumeroDos))
-    print("RESTAR:",R.restar(NumeroUno,NumeroDos))
-    print("MULTIPLICAR:",M.Multiplicar(NumeroUno,NumeroDos))
-    print("DIVIDIR:",D.Dividir(NumeroUno,NumeroDos))
-    print("ELEVAR EL PRIMER NUMERO AL CUADRADO:",C.Cuadrado(NumeroUno))
-    print("ELEVAR EL SEGUNDO NUMERO AL CUADRADO:", C.Cuadrado(NumeroDos))  
+String obtenerNombre()
+{
+    return "Gabo";
+}
+
+String obtenerApellido()
+{
+    return "Gudiño";
+}
+~~~
+Arrow functions ó funciones cortas:
+~~~
+int calcularEdadshortFunctions(int aAcual, int aNacimiento) => aAcual - aNacimiento;
 ~~~
 
- ### 3. MANEJO DE LAS F STRING EN PYTHON 3
-En esta sección se abordaron muchos temas demasiado interesantes y útiles a la hora de programar, hablo de <b>formatted string literals</b> ó <b>formateo literal de cadenas</b> en la cual consiste en implementarlo a la sintaxis convirtiendola en más simple y fluida que hará más sencillo y práctico darle formato a cadenas de texto al momento de imprimirlas en pantalla.
-Los ejercicios que se llevaron acabo en clase fueron los siguientes:
-
-  - Mensajes desde ciertas funciones eviando cadenas como argumentos y regresandolas con el uso de las <b>f string</b>.
-  - Crear listas con datos previamente asignados para posterior a eso mostrarlos en pantalla con el uso de las <b>f string</b>.
-  - Ejercicio para imprimir información de alumnos con sus respectivas calificaciones y materias haciendo uso de las <b>f string</b>.
-  
-Las <b>líneas de código</b> que destacan de dichos ejercicios son los siguientes:
-  
+ ### 3. LEER DATOS DESDE EL TECLADO
+En esta sección se abordó como leer datos desde el teclado en la cual es demasiado útil a la hora de programar. Para llevarlo a cabo se necesita el uso de una librería de Dart llamada "dart:io". Para llamar dicha función a nuestro código la siguiente sintaxis es la correcta:
 ~~~
-  return f"Hola {Nombre}, tienes {Edad} años."
-  return f"Hola {Nombre}, tienes {anio_actual- anio_nacimiento} años."
-  return f"Divide y vencerás: Hola {Nombre}, tienes {CalcularEdad(anio_actual,anio_nacimiento)} años."
-  print(f"Alumno: {AlumnosCalificaciones['Nombre']}")
-  print(f"Alumno: {AlumnosCalificaciones['Nombre']}", f"con una calificación de: {AlumnosCalificaciones['Materia1']}")
-  print(f"{Encabezado[0]:^10}{Encabezado[1]:^10}{Encabezado[2]:^10} {Encabezado[3]:^10}")
-  print(f"{Estudiantes[a]:^10}{Calificaciones[a]:^10}{Calificaciones2[a]:^10}{Calificaciones3[a]:^10}")
+import 'dart:io';
+~~~
+Para llevar a cabo todo este proceso, se necesitará realizar el siguiente método:
+~~~
+var nombreVariable = stdin.readLineSync();
 ~~~
   
 #### 4. ESTRUCTURAS DE DATOS EN PYTHON 3
