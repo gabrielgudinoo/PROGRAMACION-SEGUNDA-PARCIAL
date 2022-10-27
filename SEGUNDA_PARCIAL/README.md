@@ -243,7 +243,8 @@ En este código nuestro objeto es una Casa, cuyas propiedades son <b>precio</b>,
 
 ### ÚLTIMO EJERCICIO DE LA UNIDAD: ENTRANDO EN HERENCIAS, CREAR UNA CLASE PADRE LLAMDA "ANIMAL" CON DOS CLASES HIJO "TIBURÓN" "TIGRE" Y QUE LA CLASE "TIBURÓN" TENGA UNA CLASE HIJO "TIBURONCÍN".
 
-En forma de descripción, se va a nacesitar crear cuatro clases usando y aplicando o heredando los métodos y propiedades mediante la estructuración de herencias en Dart. El código es el siguiente:
+En forma de descripción, se va a nacesitar crear cuatro clases usando y aplicando o heredando los métodos y propiedades mediante la estructuración de herencias en Dart. 
+#### EL CÓDIGO ES EL SIGUIENTE
 
 ~~~
 class Animal
@@ -348,7 +349,7 @@ void main()
 }
 ~~~
 
-La pantalla de ejecución es la siguiente:
+#### LA PANTALLA DE EJECUCIÓN ES LA SIGUIENTE:
 
 ![](https://i.imgur.com/f79DTXO.png)
 
